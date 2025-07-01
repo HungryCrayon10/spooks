@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:spooks/acquire_ghost_peppers",
+  "criteria": {
+    "eat_ghost_peppers": {
+      "conditions": {
+        "item": {
+          "items": "spooks:ghost_peppers"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/nether.png",
+    "description": "Disappear for a very brief period by eating ghost peppers",
+    "icon": {
+      "count": 1,
+      "id": "spooks:ghost_peppers"
+    },
+    "title": "Spirit Snack"
+  },
+  "requirements": [
+    [
+      "eat_ghost_peppers"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

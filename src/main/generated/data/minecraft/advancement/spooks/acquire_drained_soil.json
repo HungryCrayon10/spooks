@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:spooks/acquire_ghost_peppers",
+  "criteria": {
+    "got_drained_soil": {
+      "conditions": {
+        "items": [
+          {
+            "items": "spooks:hollowed_ground"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/nether.png",
+    "description": "Ghost peppers drain the souls out of soul soil as they grow",
+    "icon": {
+      "count": 1,
+      "id": "spooks:hollowed_ground"
+    },
+    "title": "Soulless"
+  },
+  "requirements": [
+    [
+      "got_drained_soil"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:spooks/enter_nether",
+  "criteria": {
+    "got_corn": {
+      "conditions": {
+        "items": [
+          {
+            "items": "spooks:crimson_corn"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/nether.png",
+    "description": "Acquire Crimson Corn, a nylium crop in the Crimson Forest",
+    "icon": {
+      "count": 1,
+      "id": "spooks:crimson_corn"
+    },
+    "title": "I LOVE Corn!"
+  },
+  "requirements": [
+    [
+      "got_corn"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

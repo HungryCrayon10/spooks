@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "spooks",
+  "version": "1.21.1-1.0.0",
+  "name": "Spooks",
+  "description": "Content of varying edginess",
+  "authors": [
+    "HungryCrayon10"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/spooks/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "net.hungry.spooks.client.SpooksDataGenerator"
+    ],
+    "client": [
+      "net.hungry.spooks.client.SpooksClient"
+    ],
+    "main": [
+      "net.hungry.spooks.SpooksMain"
+    ]
+  },
+  "mixins": [
+    "spooks.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": ">=1.21 <=1.21.1"
+  }
+}

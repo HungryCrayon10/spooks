@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:spooks/acquire_warpear",
+  "criteria": {
+    "eat_warpear": {
+      "conditions": {
+        "item": {
+          "items": "spooks:warpear"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/nether.png",
+    "description": "Teleport an extremely small distance by eating a warpear",
+    "icon": {
+      "count": 1,
+      "id": "spooks:warpear"
+    },
+    "title": "Slower Than Walking"
+  },
+  "requirements": [
+    [
+      "eat_warpear"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

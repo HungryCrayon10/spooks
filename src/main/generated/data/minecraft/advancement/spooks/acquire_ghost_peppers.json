@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:spooks/enter_nether",
+  "criteria": {
+    "got_peppers": {
+      "conditions": {
+        "items": [
+          {
+            "items": "spooks:ghost_peppers"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/nether.png",
+    "description": "Acquire Ghost Peppers, a plant that grows on soul soil",
+    "icon": {
+      "count": 1,
+      "id": "spooks:ghost_peppers"
+    },
+    "title": "Ghoulish Farming"
+  },
+  "requirements": [
+    [
+      "got_peppers"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

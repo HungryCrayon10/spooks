@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:spooks/acquire_crimson_corn",
+  "criteria": {
+    "eat_crimson_corn": {
+      "conditions": {
+        "item": {
+          "items": "spooks:crimson_corn"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/nether.png",
+    "description": "Become briefly fire resistant by eating crimson corn",
+    "icon": {
+      "count": 1,
+      "id": "spooks:crimson_corn"
+    },
+    "title": "Heartburn"
+  },
+  "requirements": [
+    [
+      "eat_crimson_corn"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

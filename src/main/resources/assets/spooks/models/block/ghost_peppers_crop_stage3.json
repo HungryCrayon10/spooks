@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "spooks:block/ghost_peppers_crop_stage3_alt"
+  }
+}

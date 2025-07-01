@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:spooks/enter_nether",
+  "criteria": {
+    "got_pear": {
+      "conditions": {
+        "items": [
+          {
+            "items": "spooks:warpear"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/nether.png",
+    "description": "Acquire a Warpear, found on trees in the Warped Forest",
+    "icon": {
+      "count": 1,
+      "id": "spooks:warpear"
+    },
+    "title": "Chorus Fruit Lite"
+  },
+  "requirements": [
+    [
+      "got_pear"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "re-soul",
+  "key": {
+    "B": {
+      "item": "minecraft:bone"
+    },
+    "R": {
+      "item": "minecraft:rotten_flesh"
+    },
+    "S": {
+      "item": "spooks:hollowed_ground"
+    }
+  },
+  "pattern": [
+    "BRB",
+    "RSR",
+    "BRB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:soul_soil"
+  }
+}
