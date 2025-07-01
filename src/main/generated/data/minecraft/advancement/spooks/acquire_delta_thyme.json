@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:spooks/enter_nether",
+  "criteria": {
+    "got_thyme": {
+      "conditions": {
+        "items": [
+          {
+            "items": "spooks:delta_thyme"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/nether.png",
+    "description": "Acquire Delta Thyme, a surface-growth herb in Basalt Deltas",
+    "icon": {
+      "count": 1,
+      "id": "spooks:delta_thyme"
+    },
+    "title": "Programming Joke"
+  },
+  "requirements": [
+    [
+      "got_thyme"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

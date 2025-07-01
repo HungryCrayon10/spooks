@@ -2,15 +2,20 @@ package net.hungry.spooks.blocks;
 
 import com.mojang.serialization.MapCodec;
 import net.minecraft.block.*;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.random.Random;
 import net.minecraft.world.BlockView;
+import net.minecraft.world.World;
 import net.minecraft.world.WorldView;
 
-public class DeltaThymeGrowth extends MultifaceGrowthBlock {
+public class DeltaThymeGrowth extends MultifaceGrowthBlock implements Fertilizable {
     public DeltaThymeGrowth(Settings settings) {
         super(settings);
     }
+
+    private final LichenGrower grower = new LichenGrower(this);
 
     @Override
     protected MapCodec<? extends MultifaceGrowthBlock> getCodec() {
@@ -39,8 +44,20 @@ public class DeltaThymeGrowth extends MultifaceGrowthBlock {
         return bl;
     }
 
+    public boolean isFertilizable(WorldView world, BlockPos pos, BlockState state) {
+        return Direction.stream().anyMatch(direction -> this.grower.canGrow(state, world, pos, direction.getOpposite()));
+    }
+
+    public boolean canGrow(World world, Random random, BlockPos pos, BlockState state) {
+        return true;
+    }
+
+    public void grow(ServerWorld world, Random random, BlockPos pos, BlockState state) {
+        this.grower.grow(state, world, pos, random);
+    }
+
     public LichenGrower getGrower() {
-        return null;
+        return this.grower;
     }
 }
 

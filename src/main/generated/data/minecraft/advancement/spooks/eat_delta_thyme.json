@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:spooks/acquire_delta_thyme",
+  "criteria": {
+    "eat_delta_thyme": {
+      "conditions": {
+        "item": {
+          "items": "spooks:delta_thyme"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "minecraft:textures/gui/advancements/backgrounds/nether.png",
+    "description": "Eat delta thyme on its own for negligent nutrition",
+    "icon": {
+      "count": 1,
+      "id": "spooks:delta_thyme"
+    },
+    "show_toast": false,
+    "title": "I Hate Seasoning"
+  },
+  "requirements": [
+    [
+      "eat_delta_thyme"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

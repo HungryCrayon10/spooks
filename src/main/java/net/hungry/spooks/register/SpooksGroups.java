@@ -37,5 +37,9 @@ public class SpooksGroups {
             itemGroup.addAfter(Items.CHORUS_FRUIT, SpooksItems.WARPEAR);
         }
         );
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(itemGroup -> {
+            itemGroup.addAfter(Items.CRIMSON_ROOTS, SpooksItems.DELTA_THYME);
+        }
+        );
     }
 }
