@@ -11,13 +11,15 @@
     }
   },
   "display": {
+    "announce_to_chat": false,
     "background": "minecraft:textures/gui/advancements/backgrounds/nether.png",
     "description": "Teleport an extremely small distance by eating a warpear",
     "icon": {
       "count": 1,
       "id": "spooks:warpear"
     },
-    "title": "Slower Than Walking"
+    "show_toast": false,
+    "title": "Barely Even Moved"
   },
   "requirements": [
     [

@@ -1,9 +1,11 @@
-// 1.21.1	2025-06-30T19:58:15.9810571	Spooks/Advancements
+// 1.21.1	2025-07-01T21:47:00.7059143	Spooks/Advancements
+e7662eaa3f951989a1295daef014b2def14f91ae data\minecraft\advancement\spooks\acquire_delta_thyme.json
 6c145cfe8f05cd0ca0527dbd712184cf8db116cd data\minecraft\advancement\spooks\acquire_crimson_corn.json
 4a597722336e8264d8ee6a89a8fb908029a7f770 data\minecraft\advancement\spooks\acquire_drained_soil.json
-4f58c0a5ef6b5d2eea995869b377a561d344dcfe data\minecraft\advancement\spooks\eat_ghost_peppers.json
-7ac65f40113e81a582d3205a2b77306d95e6b1aa data\minecraft\advancement\spooks\acquire_ghost_peppers.json
-9792fd0d1d56fc238ac70191b8d0296b06af0988 data\minecraft\advancement\spooks\eat_crimson_corn.json
-8486c0444b2b2b188bf22314a8fc3699e548ecac data\minecraft\advancement\spooks\eat_warpear.json
+4cfb4d15d898efd87827d23c2814c8883a037db4 data\minecraft\advancement\spooks\eat_ghost_peppers.json
+e239cb05f08f74e13771a8510d10258362a51817 data\minecraft\advancement\spooks\eat_delta_thyme.json
+90fef4641e93138b2b4e1d3a50ac1edafea88c14 data\minecraft\advancement\spooks\acquire_ghost_peppers.json
+e1838ddbad560a2273429510176f3d308dcbad54 data\minecraft\advancement\spooks\eat_crimson_corn.json
+1920e64bb0d16f165067fc047833ba575bf811be data\minecraft\advancement\spooks\eat_warpear.json
 696b3a9ae5d1c49c5be543670f4431dd50e86210 data\minecraft\advancement\spooks\enter_nether.json
 e22707c236c0cbcb2e91d0878f105422b399f9a2 data\minecraft\advancement\spooks\acquire_warpear.json

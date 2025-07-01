@@ -17,23 +17,13 @@ public class SpooksRecipes extends FabricRecipeProvider {
 
     @Override
     public void generate(RecipeExporter recipeExporter) {
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.SOUL_SAND)
-                .pattern("ERE")
-                .pattern("RSR")
-                .pattern("ERE")
-                .input('R', Items.ROTTEN_FLESH)
-                .input('E', Items.SPIDER_EYE)
-                .input('S', SpooksBlocks.HOLLOWED_GROUND)
-                .group("re-soul")
-                .criterion(FabricRecipeProvider.hasItem(SpooksBlocks.HOLLOWED_GROUND), FabricRecipeProvider.conditionsFromItem(SpooksBlocks.HOLLOWED_GROUND))
-                .offerTo(recipeExporter);
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.SOUL_SOIL)
-                .pattern("BRB")
-                .pattern("RSR")
-                .pattern("BRB")
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.SOUL_SOIL, 3)
+                .pattern("BBB")
+                .pattern("HHH")
+                .pattern("RRR")
                 .input('B', Items.BONE)
                 .input('R', Items.ROTTEN_FLESH)
-                .input('S', SpooksBlocks.HOLLOWED_GROUND)
+                .input('H', SpooksBlocks.HOLLOWED_GROUND)
                 .group("re-soul")
                 .criterion(FabricRecipeProvider.hasItem(SpooksBlocks.HOLLOWED_GROUND), FabricRecipeProvider.conditionsFromItem(SpooksBlocks.HOLLOWED_GROUND))
                 .offerTo(recipeExporter);

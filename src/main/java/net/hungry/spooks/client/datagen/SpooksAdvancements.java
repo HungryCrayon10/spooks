@@ -44,7 +44,7 @@ public class SpooksAdvancements extends FabricAdvancementProvider {
         AdvancementEntry acquireGhostPeppers = Advancement.Builder.create()
                 .display(
                         SpooksItems.GHOST_PEPPERS,
-                        Text.literal("Ghoulish Farming"),
+                        Text.literal("Ghastly Heat"),
                         Text.literal("Acquire Ghost Peppers, a plant that grows on soul soil"),
                         Identifier.ofVanilla("textures/gui/advancements/backgrounds/nether.png"),
                         AdvancementFrame.TASK,
@@ -86,6 +86,21 @@ public class SpooksAdvancements extends FabricAdvancementProvider {
                 .parent(enterNether)
                 .build(consumer, MOD_ID + "/acquire_warpear");
 
+        AdvancementEntry acquireDeltaThyme = Advancement.Builder.create()
+                .display(
+                        SpooksItems.DELTA_THYME,
+                        Text.literal("Programming Joke"),
+                        Text.literal("Acquire Delta Thyme, a surface-growth herb in Basalt Deltas"),
+                        Identifier.ofVanilla("textures/gui/advancements/backgrounds/nether.png"),
+                        AdvancementFrame.TASK,
+                        true,
+                        true,
+                        false
+                )
+                .criterion("got_thyme", InventoryChangedCriterion.Conditions.items(SpooksItems.DELTA_THYME))
+                .parent(enterNether)
+                .build(consumer, MOD_ID + "/acquire_delta_thyme");
+
         AdvancementEntry eatGhostPeppers = Advancement.Builder.create()
                 .display(
                         SpooksItems.GHOST_PEPPERS,
@@ -93,8 +108,8 @@ public class SpooksAdvancements extends FabricAdvancementProvider {
                         Text.literal("Disappear for a very brief period by eating ghost peppers"),
                         Identifier.ofVanilla("textures/gui/advancements/backgrounds/nether.png"),
                         AdvancementFrame.TASK,
-                        true,
-                        true,
+                        false,
+                        false,
                         false
                 )
                 .criterion("eat_ghost_peppers", ConsumeItemCriterion.Conditions.item(SpooksItems.GHOST_PEPPERS))
@@ -108,8 +123,8 @@ public class SpooksAdvancements extends FabricAdvancementProvider {
                         Text.literal("Become briefly fire resistant by eating crimson corn"),
                         Identifier.ofVanilla("textures/gui/advancements/backgrounds/nether.png"),
                         AdvancementFrame.TASK,
-                        true,
-                        true,
+                        false,
+                        false,
                         false
                 )
                 .criterion("eat_crimson_corn", ConsumeItemCriterion.Conditions.item(SpooksItems.CRIMSON_CORN))
@@ -119,17 +134,32 @@ public class SpooksAdvancements extends FabricAdvancementProvider {
         AdvancementEntry eatWarpear = Advancement.Builder.create()
                 .display(
                         SpooksItems.WARPEAR,
-                        Text.literal("Slower Than Walking"),
+                        Text.literal("Barely Even Moved"),
                         Text.literal("Teleport an extremely small distance by eating a warpear"),
                         Identifier.ofVanilla("textures/gui/advancements/backgrounds/nether.png"),
                         AdvancementFrame.TASK,
-                        true,
-                        true,
+                        false,
+                        false,
                         false
                 )
                 .criterion("eat_warpear", ConsumeItemCriterion.Conditions.item(SpooksItems.WARPEAR))
                 .parent(acquireWarpear)
                 .build(consumer, MOD_ID + "/eat_warpear");
+
+        AdvancementEntry eatDeltaThyme = Advancement.Builder.create()
+                .display(
+                        SpooksItems.DELTA_THYME,
+                        Text.literal("I Hate Seasoning"),
+                        Text.literal("Eat delta thyme on its own for negligent nutrition"),
+                        Identifier.ofVanilla("textures/gui/advancements/backgrounds/nether.png"),
+                        AdvancementFrame.TASK,
+                        false,
+                        false,
+                        false
+                )
+                .criterion("eat_delta_thyme", ConsumeItemCriterion.Conditions.item(SpooksItems.DELTA_THYME))
+                .parent(acquireDeltaThyme)
+                .build(consumer, MOD_ID + "/eat_delta_thyme");
 
         AdvancementEntry acquireDrainedSoil = Advancement.Builder.create()
                 .display(

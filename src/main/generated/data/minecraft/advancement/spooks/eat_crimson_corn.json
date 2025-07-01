@@ -11,12 +11,14 @@
     }
   },
   "display": {
+    "announce_to_chat": false,
     "background": "minecraft:textures/gui/advancements/backgrounds/nether.png",
     "description": "Become briefly fire resistant by eating crimson corn",
     "icon": {
       "count": 1,
       "id": "spooks:crimson_corn"
     },
+    "show_toast": false,
     "title": "Heartburn"
   },
   "requirements": [

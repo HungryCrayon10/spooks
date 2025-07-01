@@ -6,20 +6,20 @@
     "B": {
       "item": "minecraft:bone"
     },
+    "H": {
+      "item": "spooks:hollowed_ground"
+    },
     "R": {
       "item": "minecraft:rotten_flesh"
-    },
-    "S": {
-      "item": "spooks:hollowed_ground"
     }
   },
   "pattern": [
-    "BRB",
-    "RSR",
-    "BRB"
+    "BBB",
+    "HHH",
+    "RRR"
   ],
   "result": {
-    "count": 1,
+    "count": 3,
     "id": "minecraft:soul_soil"
   }
 }
