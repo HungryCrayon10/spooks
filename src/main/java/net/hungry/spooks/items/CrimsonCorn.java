@@ -18,8 +18,10 @@ public class CrimsonCorn extends Item {
     @Override
     public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
         if (user instanceof LivingEntity) {
-            var fireResist = new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 2*20, 0, false, true, true);
-            user.addStatusEffect(fireResist);
+            var cornHype = new StatusEffectInstance(StatusEffects.HASTE, 2*20, 0, false, true, true);
+            var cornVisibleHype = new StatusEffectInstance(StatusEffects.GLOWING, 2*20, 0, false, true, true);
+            user.addStatusEffect(cornHype);
+            user.addStatusEffect(cornVisibleHype);
             user.tryEatFood(world, stack);
         }
         return (stack);

@@ -27,6 +27,7 @@ public class SpooksGroups {
             itemGroup.add(SpooksItems.GHOST_PEPPERS);
             itemGroup.add(SpooksItems.CRIMSON_CORN);
             itemGroup.add(SpooksItems.WARPEAR);
+            itemGroup.add(SpooksItems.BLOOD_ORANGE);
             itemGroup.add(SpooksItems.DELTA_THYME);
             itemGroup.add(SpooksBlocks.HOLLOWED_GROUND.asItem());
         }
@@ -35,6 +36,7 @@ public class SpooksGroups {
             itemGroup.addAfter(Items.GLOW_BERRIES, SpooksItems.GHOST_PEPPERS);
             itemGroup.addAfter(Items.POISONOUS_POTATO, SpooksItems.CRIMSON_CORN);
             itemGroup.addAfter(Items.CHORUS_FRUIT, SpooksItems.WARPEAR);
+            itemGroup.addAfter(Items.ENCHANTED_GOLDEN_APPLE, SpooksItems.BLOOD_ORANGE);
         }
         );
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(itemGroup -> {

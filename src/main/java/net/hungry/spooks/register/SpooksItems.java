@@ -1,16 +1,14 @@
 package net.hungry.spooks.register;
 
-import net.hungry.spooks.items.DeltaThyme;
-import net.hungry.spooks.items.Warpear;
+import net.hungry.spooks.items.*;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.Registries;
-import net.hungry.spooks.items.GhostPeppers;
-import net.hungry.spooks.items.CrimsonCorn;
 import net.minecraft.util.Rarity;
 
 import static net.hungry.spooks.SpooksMain.MOD_ID;
+import static net.hungry.spooks.items.BloodOrange.bloodOrangeFood;
 import static net.hungry.spooks.items.CrimsonCorn.crimsonCornFood;
 import static net.hungry.spooks.items.DeltaThyme.deltaThymeFood;
 import static net.hungry.spooks.items.GhostPeppers.ghostPepperFood;
@@ -36,6 +34,10 @@ public class SpooksItems {
     public static final Item DELTA_THYME = register(
             new DeltaThyme(new Item.Settings().food(deltaThymeFood).rarity(Rarity.UNCOMMON)),
             "delta_thyme"
+    );
+    public static final Item BLOOD_ORANGE = register(
+            new BloodOrange(new Item.Settings().food(bloodOrangeFood).rarity(Rarity.UNCOMMON)),
+            "blood_orange"
     );
 
     public static void initialize() {

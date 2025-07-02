@@ -86,6 +86,21 @@ public class SpooksAdvancements extends FabricAdvancementProvider {
                 .parent(enterNether)
                 .build(consumer, MOD_ID + "/acquire_warpear");
 
+        AdvancementEntry acquireBloodOrange = Advancement.Builder.create()
+                .display(
+                        SpooksItems.BLOOD_ORANGE,
+                        Text.literal("Annoying"),
+                        Text.literal("Acquire a Blood Orange, found somewhere"),
+                        Identifier.ofVanilla("textures/gui/advancements/backgrounds/nether.png"),
+                        AdvancementFrame.TASK,
+                        true,
+                        true,
+                        false
+                )
+                .criterion("got_orange", InventoryChangedCriterion.Conditions.items(SpooksItems.BLOOD_ORANGE))
+                .parent(enterNether)
+                .build(consumer, MOD_ID + "/acquire_blood_orange");
+
         AdvancementEntry acquireDeltaThyme = Advancement.Builder.create()
                 .display(
                         SpooksItems.DELTA_THYME,
@@ -145,6 +160,21 @@ public class SpooksAdvancements extends FabricAdvancementProvider {
                 .criterion("eat_warpear", ConsumeItemCriterion.Conditions.item(SpooksItems.WARPEAR))
                 .parent(acquireWarpear)
                 .build(consumer, MOD_ID + "/eat_warpear");
+
+        AdvancementEntry eatBloodOrange = Advancement.Builder.create()
+                .display(
+                        SpooksItems.BLOOD_ORANGE,
+                        Text.literal("Bloodlust"),
+                        Text.literal("Become stronger for short time by eating a blood orange"),
+                        Identifier.ofVanilla("textures/gui/advancements/backgrounds/nether.png"),
+                        AdvancementFrame.TASK,
+                        false,
+                        false,
+                        false
+                )
+                .criterion("eat_blood_orange", ConsumeItemCriterion.Conditions.item(SpooksItems.BLOOD_ORANGE))
+                .parent(acquireBloodOrange)
+                .build(consumer, MOD_ID + "/eat_blood_orange");
 
         AdvancementEntry eatDeltaThyme = Advancement.Builder.create()
                 .display(
