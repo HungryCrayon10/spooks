@@ -1,6 +1,7 @@
 package net.hungry.spooks;
 
 import net.fabricmc.api.ModInitializer;
+import net.hungry.spooks.register.SpooksEffects;
 import net.hungry.spooks.register.SpooksGroups;
 import net.hungry.spooks.register.SpooksItems;
 import net.hungry.spooks.register.SpooksBlocks;
@@ -13,5 +14,6 @@ public class SpooksMain implements ModInitializer {
         SpooksItems.initialize();
         SpooksBlocks.initialize();
         SpooksGroups.initialize();
+        SpooksEffects.initialize();
     }
 }

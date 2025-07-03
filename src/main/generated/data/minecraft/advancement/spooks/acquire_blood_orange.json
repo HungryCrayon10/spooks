@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:spooks/enter_nether",
+  "criteria": {
+    "got_orange": {
+      "conditions": {
+        "items": [
+          {
+            "items": "spooks:blood_orange"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/nether.png",
+    "description": "Acquire a Blood Orange, found somewhere",
+    "icon": {
+      "count": 1,
+      "id": "spooks:blood_orange"
+    },
+    "title": "Annoying"
+  },
+  "requirements": [
+    [
+      "got_orange"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

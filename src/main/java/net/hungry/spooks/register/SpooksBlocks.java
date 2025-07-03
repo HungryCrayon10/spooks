@@ -40,6 +40,15 @@ public class SpooksBlocks {
             "delta_thyme_growth",
             false
     );
+    public static final Block WASTESHROOM_PLANT = register(
+            new WasteshroomPlant(AbstractBlock.Settings.create()
+                    .sounds(BlockSoundGroup.GRASS)
+                    .noCollision()
+                    .ticksRandomly()
+                    .pistonBehavior(PistonBehavior.DESTROY)),
+            "wasteshroom_plant",
+            false
+    );
     public static final Block HOLLOWED_GROUND = register(
             new HollowedGround(AbstractBlock.Settings.create()
                     .sounds(BlockSoundGroup.SAND).strength(0.5F, 0.5F)),

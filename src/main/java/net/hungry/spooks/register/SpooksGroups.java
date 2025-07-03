@@ -29,6 +29,7 @@ public class SpooksGroups {
             itemGroup.add(SpooksItems.WARPEAR);
             itemGroup.add(SpooksItems.BLOOD_ORANGE);
             itemGroup.add(SpooksItems.DELTA_THYME);
+            itemGroup.add(SpooksItems.WASTESHROOM);
             itemGroup.add(SpooksBlocks.HOLLOWED_GROUND.asItem());
         }
         );

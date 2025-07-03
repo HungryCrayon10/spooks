@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:spooks/acquire_blood_orange",
+  "criteria": {
+    "eat_blood_orange": {
+      "conditions": {
+        "item": {
+          "items": "spooks:blood_orange"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "minecraft:textures/gui/advancements/backgrounds/nether.png",
+    "description": "Become stronger for short time by eating a blood orange",
+    "icon": {
+      "count": 1,
+      "id": "spooks:blood_orange"
+    },
+    "show_toast": false,
+    "title": "Bloodlust"
+  },
+  "requirements": [
+    [
+      "eat_blood_orange"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

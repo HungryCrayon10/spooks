@@ -13,6 +13,7 @@ import static net.hungry.spooks.items.CrimsonCorn.crimsonCornFood;
 import static net.hungry.spooks.items.DeltaThyme.deltaThymeFood;
 import static net.hungry.spooks.items.GhostPeppers.ghostPepperFood;
 import static net.hungry.spooks.items.Warpear.warpearFood;
+import static net.hungry.spooks.items.Wasteshroom.wasteshroomFood;
 
 public class SpooksItems {
     public static Item register(Item item, String id) {
@@ -38,6 +39,10 @@ public class SpooksItems {
     public static final Item BLOOD_ORANGE = register(
             new BloodOrange(new Item.Settings().food(bloodOrangeFood).rarity(Rarity.UNCOMMON)),
             "blood_orange"
+    );
+    public static final Item WASTESHROOM = register(
+            new Wasteshroom(new Item.Settings().food(wasteshroomFood).rarity(Rarity.UNCOMMON)),
+            "wasteshroom"
     );
 
     public static void initialize() {
